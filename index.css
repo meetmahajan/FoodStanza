@@ -1,0 +1,80 @@
+body.in_background 
+{
+	background: url(1.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: 100% 100%;
+}
+body.in_background1 
+{
+	background: url(bgg1.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: 100% 100%;
+}
+body.in_background2
+{
+	background: url(bgg2.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: 100% 100%;
+}
+
+div.in_login{
+    border:unset;
+    border-color:black;
+    float:center;
+    margin-top:180px;
+ 
+}
+input.in_box
+{
+margin:10px;
+font-size:x-large;
+min-width:300px;
+background-color:black;
+opacity:.8;
+color:white;
+font-family:Arial
+}
+p.in_center{
+margin:0px;
+font-family:Edwardian Script ITC;
+color:white;
+font-size:50px;
+}
+a.in_forgot:link {
+    padding-right:45px;
+text-decoration:none;
+font-size:15px;
+font-family:Arial;
+color:white;
+}
+a.in_forgot:visited {
+    padding-right:45px;
+text-decoration:none;
+font-size:15px;
+font-family:Arial;
+color:cyan;
+}
+a.in_signup:link {
+text-decoration:none;
+padding-right:45px;
+font-size:15px;
+font-family:Arial;
+color:white;
+}
+a.in_signup:visited {
+text-decoration:none;
+padding-right:45px;
+font-size:15px;
+font-family:Arial;
+color:white;
+}
+.in_white {
+    padding-right:45px;
+    color:white;
+}
