@@ -3,7 +3,7 @@
 <head>
     <title>Sign Up</title>
     <meta charset="utf-8">
-    <link href="index.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -46,23 +46,23 @@
         <p class="in_center">Create your FoodStanza Account</p>
     </div>
         <div class="col-xs-12" style="margin-top:10px" align="center">
-            <form id="Signup" method="post" action="#.php">
+            <form id="Signup" method="post" action="SignUpCode.php">
                 <table>
                     <tr>
                         <td>
-                            <input class="in_box" type="text" placeholder="Full Name" required name="User" />
+                            <input class="in_box" type="text" placeholder="Full Name" required name="Name" />
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input class="in_box" type="email" placeholder="E-Mail" required name="UserName" />
+                            <input class="in_box" type="email" placeholder="E-Mail" required name="Email" />
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input class="in_box" type="password" placeholder="Password" required id="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" />
+                            <input class="in_box" type="password" placeholder="Password" required name="Password" id="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" />
                         </td>
                     </tr>
 
