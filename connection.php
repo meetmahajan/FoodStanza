@@ -2,7 +2,7 @@
 <body style="margin:0px;padding:0px">
 <?php
 
-$conn=mysql_connect("localhost","FoodStanza","Food");
+$conn=mysql_connect("localhost","FoodStanza","food");
 	if(!$conn)
 	{
 		die('Error in connection'.mysql_error());

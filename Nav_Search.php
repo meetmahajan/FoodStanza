@@ -8,9 +8,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	 function enter(elem){
+     elem.style.backgroundColor = 'cyan';
+	}
+	 function leave(elem){
+     elem.style.backgroundColor = '#fcdf9a';
+	}
+	</script>
 </head>
 
-<body class="in_background2">
+<body class="in_background1">
     <div>
         <nav style="background-color:black;border:0px;padding:5px;" class="navbar navbar-inverse navbar-fixed-top">
             <div class="col-xs-12">
@@ -67,97 +77,18 @@
         include_once('connection.php');
         $city = $_POST["City"];
         $display = mysql_query("select * from streetfood where city='$city'");
-        echo "<table border='1' width='100%' cellspacing='4' cellpadding='4' class='table table-bordered' style='font-weight:bold;color:white;border-color:yellow;margin:1px;padding:0px;font-size:16pt'>
-            ";
-            echo "
-            <tr align='center'>
-                ";
-                echo "
-                <td>
-                    ";
-                    echo "<b>Code</b>";
-                    echo "
-                </td>";
-                echo "
-                <td>
-                    ";
-                    echo "<b>Food Type</b>";
-                    echo "
-                </td>";
-                echo "
-                <td>
-                    ";
-                    echo "<b>Stall Name</b>";
-                    echo "
-                </td>";
-                echo "
-                <td>
-                    ";
-                    echo "<b>Address</b>";
-                    echo "
-                </td>";
-                echo "
-                <td>
-                    ";
-                    echo "<b>Phone Number</b>";
-                    echo "
-                </td>";
-                echo "
-            </tr>";
-            while($row = mysql_fetch_array($display))
-            {
-
-
-            $i = $row['URL'];
-            echo "
-            <tr align='center'>
-                ";
-                echo "
-                <td>
-                    ";
-                    echo "<a href='$i' style='color:lightred'>
-                        ";
-                        echo $row['Code'];
-                        echo "
-                    </a>";
-                    echo "
-                </td>";
-                echo "
-                <td>
-                    ";
-                    echo $row['FoodType'];
-                    echo "
-                </td>";
-                echo "
-                <td>
-                    ";
-                    echo "<a href='$i' style='color:lightred'>
-                        ";
-                        echo $row['StallName'];
-                        echo "<a>
-                            ";
-                            echo "
-                </td>";
-                echo "
-                <td>
-                    ";
-                    echo $row['Address'].",".$row['Area'].",".$row['City'];
-                    echo "
-                </td>";
-                echo "
-                <td>
-                    ";
-                    echo $row['PhoneNumber'];
-                    echo "
-                </td>";
-                echo "
-            </tr>";
-
-            }
-            echo "
-        </table>";
-
-        ?>
+		echo "<div align='center' style='margin-left:150px;margin-top:0px;'>"; 
+		while($row = mysql_fetch_array($display))
+		{
+			$i=$row['URL'];
+			echo "<a href='$i' style='color:black'>";
+			echo "<div class='col-xs-12' onmouseover='enter(this)' onmouseout='leave(this)' style='font-size:27px;background-color:#fcdf9a;width:500px;margin-top:50px;margin-right:40px;border-radius:10px;border:solid;border-width:1px;;border-color:red;padding:0px'>";		
+			echo $row['StallName'];
+			echo "</div>";
+			echo "</a>";
+		}
+		echo "</div>";
+		?>
     </div>
 </body>
 </html>

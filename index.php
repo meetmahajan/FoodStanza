@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body class="in_background">
+<body class="in_background1">
     <div>
         <nav style="background-color:transparent;border:0px;padding:5px;" class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
@@ -52,18 +52,17 @@
                         <input style="margin:10px;font-size:large;font-family:Arial;color:black;min-width:254px;background-color:gold;border-color:red;" class="btn btn-danger navbar-btn" type="Submit" value="Sign in" />
                     </td>
                 </tr>
-                
-                <tr>
-                    <td align="right">
-                        <p class="in_white">Not Member yet?</p>
-                        <a class="in_signup"href="SignUp.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
-                    </td>
-                </tr>
+               
             </table>        
         </form>
 
     </div>
-            
+    <div style="margin-top:30px" align="center">
+	
+	<p class="in_white" style="font-size:20px">&nbsp &nbsp  &nbsp&nbsp&nbsp&nbsp Not Member yet?</p>
+    <a class="in_signup"href="SignUp.php" style="font-size:20px">&nbsp &nbsp  &nbsp&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-user"></span> Sign Up</a>
+	
+	</div>
     
 </body>
 </html>

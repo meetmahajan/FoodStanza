@@ -32,7 +32,7 @@
 
     </script>
 </head>
-<body  class="in_background">
+<body  class="in_background1">
 
     <nav style="background-color:transparent;border:0px;padding:5px;" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
