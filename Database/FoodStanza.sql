@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 04, 2017 at 12:19 PM
+-- Generation Time: Apr 05, 2017 at 07:31 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.12
 
@@ -21,6 +21,34 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `foodstanza` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `foodstanza`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `localuser`
+--
+
+CREATE TABLE IF NOT EXISTS `localuser` (
+  `Id` varchar(5) NOT NULL,
+  `User` varchar(25) NOT NULL,
+  `Name` varchar(25) NOT NULL,
+  `LocalStreet` varchar(25) NOT NULL,
+  `Area` varchar(25) NOT NULL,
+  `City` varchar(25) NOT NULL,
+  `PostalCode` bigint(25) NOT NULL,
+  `State` varchar(25) NOT NULL,
+  `Review` varchar(100) NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `localuser`
+--
+
+INSERT INTO `localuser` (`Id`, `User`, `Name`, `LocalStreet`, `Area`, `City`, `PostalCode`, `State`, `Review`) VALUES
+('JBM', 'm1@gmail.com', 'Jai Bhavani', 'Jahawar Chowk', 'Maninagar', 'Ahmedabad', 382475, 'Gujarat', 'Excellent Food.'),
+('MSP', 'm1@gmail.com', 'Meet Sew Puri', 'Mahehwari Cross Road', 'Vastral', 'Ahmedabad', 382415, 'Gujarat', 'Awesome Food !'),
+('SN', 'm1@gmail.com', 'Star Noodles', 'Rameshwar Medical', 'Rajendra Park', 'Ahmedabad', 382415, 'Gujarat', 'Noodles just "Nailed It".');
 
 -- --------------------------------------------------------
 
@@ -79,8 +107,9 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`Name`, `Email`, `Password`) VALUES
+('Avi Patel', 'avi@gmail.com', 'Avi79971'),
 ('Meet Mahajan', 'm1@gmail.com', 'Meet1234'),
-('Meet Mahajan', 'Meet@gmail.com', 'Meet');
+('Nandkishor Mahajan', 'nand@gmail.com', 'Nand1234');
 --
 -- Database: `sample`
 --

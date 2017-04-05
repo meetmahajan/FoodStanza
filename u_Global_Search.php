@@ -4,7 +4,7 @@
 	<head>
 	 <link href="LoginStyleSheet.css" rel="stylesheet" />
         <title>FoodStanza</title>
-        <link rel="stylesheet" type="text/css" href="Phase2.css">
+        <link rel="stylesheet" type="text/css" href="css/Phase2.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -36,8 +36,9 @@
                     <a style="font-family:'Times New Roman';font-size:40px;color:white;margin:5px" class="navbar-brand" href="u_home.php">FoodStanza</a>
                     <ul class="nav navbar-nav navbar-right">
                         <li style="font-size:18px;margin-top:5px"><a href="#index.php"><span class="glyphicon glyphicon-user"></span> <?php echo $Name;?></a></li>
-						<li style="font-size:18px;margin-top:5px"><a href="#Insert.php"><span class="glyphicon glyphicon-pencil"></span> Insert</a></li>
-                        <li style="font-size:18px;margin-top:5px"><a href="SignOut.php"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
+						<li style="font-size:18px;margin-top:5px"><a href="insert.php"><span class="glyphicon glyphicon-pencil"></span> Insert</a></li>
+                        <li style="font-size:18px;margin-top:5px"><a href="Records.php"><span class="glyphicon glyphicon-th-list"></span> View Records</a></li>
+						<li style="font-size:18px;margin-top:5px"><a href="SignOut.php"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
                     </ul>
                 </div>
         </nav>

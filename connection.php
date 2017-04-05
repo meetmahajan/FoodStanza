@@ -1,5 +1,3 @@
-<html>
-<body style="margin:0px;padding:0px">
 <?php
 
 $conn=mysql_connect("localhost","FoodStanza","food");
